@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 RUN apt-get update;
 
-## install git
+## install git. moved this to top since it was generating errors when run at the bottom
 RUN apt-get install git -y;
 
 RUN apt-get update; \
