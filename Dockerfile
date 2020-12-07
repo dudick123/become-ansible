@@ -32,11 +32,5 @@ RUN apt-get install -y wget apt-transport-https; \
     pwsh -c "Install-Module AZ -Scope AllUsers"
 
 ## install git
-#RUN apt-get install git -y; \
-#    git clone https://github.com/Duffney/becomeansible.git
-
-#
-#The following packages have unmet dependencies:
-#git : Depends: perl but it is not going to be installed
-#       Depends: liberror-perl but it is not going to be installed
+#RUN git clone https://github.com/Duffney/becomeansible.git
 

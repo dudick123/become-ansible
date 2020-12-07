@@ -67,9 +67,13 @@ docker run -it --rm --volume "$(pwd):/ansible" ansible
 ```
 
 ###  run the asible image, but mount the current directory as ansible, and set the working directory
-
 ```
 docker run -it --rm --volume "$(pwd):/ansible" --workdir /ansible ansible
+```
+###  run the asible image, but mount the relative windwos directory as ansible, and set the working directory
+```
+docker run -it --rm --volume "c:/source/becomeansible:/ansible:rw" --workdir /ansible ansible
+'c:/source/becomeansible:/ansible:rw'
 ```
 
 ### run the ansible immage, but pass in environment variables for an azure subscription
